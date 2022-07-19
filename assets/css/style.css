@@ -29,7 +29,7 @@ nav ul{
     align-items: center;
     list-style: none;
     padding: 16px;
-    background-color: var(--secondary-color);
+    background-color: rgb(104, 101, 101);
     margin-bottom: var(--section-margin);
 }
 
@@ -70,5 +70,55 @@ main {
     margin-bottom: var(--section-margin);
 }
 
+/* TODO: -------------------------------------*/
 
+#projects h2 {
+    text-align: center;
+    margin-bottom: var(--h2-margin);
+}
+
+.project-images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-style: solid 1px black;
+    max-width: 350px;
+}
+
+.project-images img {
+    max-width: 350px;
+    max-height: 250px;
+}
+
+/* -------------------------------------------*/
+
+#contact-me h2 {
+    margin-top: 92px;
+    text-align: center;
+    margin-bottom: var(--h2-margin);
+}
+
+.contact-links ul {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-links ul li a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 96px;
+    margin-left: 96px;
+    margin-right: 96px;
+    margin-bottom: 46px;
+}
+
+footer a {
+    text-decoration: none;
+}
 
