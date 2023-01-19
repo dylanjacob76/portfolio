@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;800&family=Qwigley&family=Roboto&display=swap');
+
 :root {
     --section-margin: 92px;
     --h2-margin: 16px;
@@ -15,38 +17,62 @@ body {
     font-family: sans-serif;
 }
 
-.header-name {
-    text-align: center;
-    font-size: 32px;
-    padding: 60px;
-    background-color: var(--primary-color);
-    color: rgb(243, 242, 232);
+#home {
+    background-image: url(../images/city.jpeg);
+    background-size: cover;
+    height: 800px;
+    margin-bottom: 56px;
+    height: 100vh;
 }
+
+/* create two classes and make them stack (column) */
+.header-name {
+    display: flex;
+    font-size: 40px;
+    padding: 60px;
+    color: rgb(243, 242, 232);
+    font-family: "Qwigley";
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picture-of-me {
+    border-radius: 50%;
+    width: 200px;
+    box-shadow: 5px 5px 5px 5px rgb(228, 233, 228) inset;
+    padding: 10px;
+}
+
 
 nav ul{
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
     list-style: none;
-    padding: 16px;
-    background-color: rgb(104, 101, 101);
+    padding: 8px;
+    background-color: rgb(18, 18, 18);
+    opacity: 80%;
     margin-bottom: var(--section-margin);
 }
 
 nav ul li {
-    margin: 8px;
-    text-emphasis:bold ;
+    padding: 8px;
+    font-weight:300;
     text-align: center;
 }
 
 nav ul li a {
-    color: var(--secondary-color);
+    color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    opacity: 100%;
 }
 
 nav ul li a:hover {
-    color: #fff;
+    color: rgb(195, 195, 195);
+    opacity: 100%;
 }
 
 main {
@@ -59,27 +85,30 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 60px 0 52px 0;
 }
 
 #about-me h2 {
     margin-bottom: var(--h2-margin);
+    font-family: "Qwigley";
+    font-size: 60px;
 }
 
-#about-me img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
 
 #about-me p {
     font-size: 16px;
     width: 80%;
     margin-bottom: var(--section-margin);
     max-width: 960px;
+    text-align: center;
+    line-height: 150%;
 }
 
 #projects h2 {
     text-align: center;
     margin-bottom: var(--h2-margin);
+    font-family: "Qwigley";
+    font-size: 60px;
 }
 
 .project-images {
@@ -88,76 +117,114 @@ main {
     justify-content: center;
     border-style: solid 1px black;
     max-width: 700px;
+    position: relative;
+    text-align: center;
+    color: #fff;
 }
 
 .project-images img {
-    height: 400px;
+    height: 500px;
     border-radius: 4%;
     margin-top: 8px ;
 }
 
 .project-1 {
     width: 700px;
-    transition: 0.3s
+    transition: 0.3s;
+    opacity: 80%;
 }
 
 .project-1:hover {
     transform:scale(1.02);
-    filter: drop-shadow(0 0 0.75rem rgb(214, 171, 106));
-    transition: 0.3s
+    filter: drop-shadow(0 0 0.75rem rgb(135, 81, 169));
+    transition: 0.3s;
+    opacity: 95%;
+}
+
+.game-secrets {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 900;
+    text-shadow: 4px 4px 8px rgb(64, 65, 65);
+}
+
+.game-secrets a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .project-2 {
     width: 346px;
     margin-right: 4px;
-    transition: 0.3s
+    transition: 0.3s;
+    opacity: 80%;
+    
 }
 
 .project-2:hover {
     transform:scale(1.02);
     filter: drop-shadow(0 0 0.75rem rgb(75, 119, 200));
-    transition: 0.3s
+    transition: 0.3s;
+    opacity: 100%;
+}
+.pokeballer {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 900;
+    text-shadow: 4px 4px 8px rgb(64, 65, 65);
+
+}
+
+.pokeballer a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .project-3 {
     width: 346px;
     margin-left: 4px;
-    transition: 0.3s
+    transition: 0.3s;
+    opacity: 90%;
 }
 
 .project-3:hover {
     transform:scale(1.02);
-    filter: drop-shadow(0 0 0.75rem rgb(226, 82, 82));
-    transition: 0.3s
+    filter: drop-shadow(0 0 0.75rem rgb(119, 186, 98));
+    transition: 0.3s;
+    opacity: 100%;
 }
 
-.project-4 {
-    width: 517px; 
-    margin-right: 8px;   
-    transition: 0.3s
+.fresh-air-finder {
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 900;
+    text-shadow: 4px 4px 8px rgb(64, 65, 65);
 }
 
-.project-4:hover {
-    transform:scale(1.02);
-    filter: drop-shadow(0 0 0.75rem rgb(65, 145, 77));
-    transition: 0.3s
+.fresh-air-finder a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.project-5 {
-    width: 175px;
-    transition: 0.3s
-}
-
-.project-5:hover {
-    transform:scale(1.01);
-    filter: drop-shadow(0 0 0.75rem rgb(44, 44, 44));
-    transition: 0.3s
+#contact-me {
+    margin-top: 60px;
 }
 
 #contact-me h2 {
     margin-top: 92px;
     text-align: center;
     margin-bottom: var(--h2-margin);
+    font-size: 60px;
+    font-family: "Qwigley";
 }
 
 .contact-links ul {
@@ -196,4 +263,6 @@ footer a:hover {
     transition: ease-in-out;
     color: rgb(226, 127, 127);
 }
+
+
 
