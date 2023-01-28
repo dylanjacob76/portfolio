@@ -1,2 +1,2 @@
 # portfolio-hw-02
-Homework 02
+Personal portfolio
