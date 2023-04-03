@@ -136,13 +136,14 @@ main {
 
 .project-1:hover {
     transform:scale(1.02);
-    filter: drop-shadow(0 0 0.75rem rgb(135, 81, 169));
+    filter: drop-shadow(0 0 0.75rem rgb(227, 64, 64));
     transition: 0.3s;
     opacity: 95%;
 }
 
-.game-secrets {
+.pokeballer {
     position: absolute;
+    background-position: center;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -151,7 +152,7 @@ main {
     text-shadow: 4px 4px 8px rgb(64, 65, 65);
 }
 
-.game-secrets a {
+.pokeballer a {
     text-decoration: none;
     color: #fff;
 }
@@ -166,11 +167,11 @@ main {
 
 .project-2:hover {
     transform:scale(1.02);
-    filter: drop-shadow(0 0 0.75rem rgb(75, 119, 200));
+    filter: drop-shadow(0 0 0.75rem rgb(64, 186, 98));
     transition: 0.3s;
     opacity: 100%;
 }
-.pokeballer {
+.fresh-air-finder {
     position: absolute;
     top: 75%;
     left: 25%;
@@ -181,7 +182,7 @@ main {
 
 }
 
-.pokeballer a {
+.fresh-air-finder a {
     text-decoration: none;
     color: #fff;
 }
@@ -195,12 +196,12 @@ main {
 
 .project-3:hover {
     transform:scale(1.02);
-    filter: drop-shadow(0 0 0.75rem rgb(119, 186, 98));
+    filter: drop-shadow(0 0 0.75rem rgb(225, 195, 149));
     transition: 0.3s;
     opacity: 100%;
 }
 
-.fresh-air-finder {
+.better-self {
     position: absolute;
     top: 75%;
     left: 75%;
@@ -210,7 +211,7 @@ main {
     text-shadow: 4px 4px 8px rgb(64, 65, 65);
 }
 
-.fresh-air-finder a {
+.better-self a {
     text-decoration: none;
     color: #fff;
 }
