@@ -25,7 +25,6 @@ body {
     height: 100vh;
 }
 
-/* create two classes and make them stack (column) */
 .header-name {
     display: flex;
     font-size: 40px;
@@ -45,8 +44,7 @@ body {
     padding: 10px;
 }
 
-
-nav ul{
+nav ul {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
@@ -59,7 +57,7 @@ nav ul{
 
 nav ul li {
     padding: 8px;
-    font-weight:300;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -104,7 +102,7 @@ main {
     line-height: 150%;
 }
 
-#projects h2 {
+#my-projects h2 {
     text-align: center;
     margin-bottom: var(--h2-margin);
     font-family: "Qwigley";
@@ -125,7 +123,7 @@ main {
 .project-images img {
     height: 500px;
     border-radius: 4%;
-    margin-top: 8px ;
+    margin-top: 8px;
 }
 
 .project-1 {
@@ -135,7 +133,7 @@ main {
 }
 
 .project-1:hover {
-    transform:scale(1.02);
+    transform: scale(1.02);
     filter: drop-shadow(0 0 0.75rem rgb(227, 64, 64));
     transition: 0.3s;
     opacity: 95%;
@@ -162,15 +160,15 @@ main {
     margin-right: 4px;
     transition: 0.3s;
     opacity: 80%;
-    
 }
 
 .project-2:hover {
-    transform:scale(1.02);
+    transform: scale(1.02);
     filter: drop-shadow(0 0 0.75rem rgb(64, 186, 98));
     transition: 0.3s;
     opacity: 100%;
 }
+
 .fresh-air-finder {
     position: absolute;
     top: 75%;
@@ -195,7 +193,7 @@ main {
 }
 
 .project-3:hover {
-    transform:scale(1.02);
+    transform: scale(1.02);
     filter: drop-shadow(0 0 0.75rem rgb(225, 195, 149));
     transition: 0.3s;
     opacity: 100%;
@@ -235,6 +233,10 @@ main {
     list-style: none;
 }
 
+.contact-links ul li {
+    margin-bottom: 4px;
+}
+
 .contact-links ul li a {
     text-decoration: none;
     color: rgb(84, 84, 84);
@@ -265,5 +267,98 @@ footer a:hover {
     color: rgb(226, 127, 127);
 }
 
+/* MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
 
+    /* NAV */
+    /* .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: initial;
+        display: block;
+        width: 100%;
+    }
 
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .navbar ul a {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4px;
+    } */
+
+    /* .contact-me {
+        border-bottom: 1px solid rgb(76, 76, 76);
+        margin: 0 24px 0 24px;
+    } */
+
+    .home,
+    /* .projects, */
+    .about-me {
+        display: none;
+    }
+
+    .resume {
+        display: block;
+    }
+
+    /* HEADER */
+    .header-name {
+        text-align: center;
+    }
+
+    .header-name h1 {
+        font-size: 75px;
+    }
+
+    #home {
+        height: 100vh;
+    }
+
+    /* PROJECTS */
+    .project-images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-images img {
+        height: 500px;
+        margin-bottom: 24px;
+    }
+
+    .pokeballer a {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .project-1 {
+        width: 330px;
+        object-fit: cover;
+    }
+
+    .fresh-air-finder a {
+        position: absolute;
+        bottom: 340px;
+        left: 30px;
+    }
+
+    .project-2 {
+        width: 330px;
+        margin-bottom: 0;
+    }
+
+    .better-self a {
+        position: absolute;
+        right: 20px;
+        top: 75px;
+    }
+
+    .project-3 {
+        width: 330px;
+    }
+}
