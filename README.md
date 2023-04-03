@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Description
-Welcome to my portfolio! If you're interested in connecting, check out my portfolio https://dylanjacob76.github.io/portfolio/
+Welcome to my portfolio! If you're interested in connecting, check out my portfolio here: https://dylanjacob76.github.io/portfolio/
 
 ## Demo
 
